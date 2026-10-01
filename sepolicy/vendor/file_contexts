@@ -72,4 +72,3 @@
 /vendor/lib(64)?/rfsa/adsp/libdspCV_skel\.so                                                            u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/rfsa/adsp/libapps_mem_heap\.so                                                         u:object_r:same_process_hal_file:s0
 
-/data/user/0/com.android.camera(/.*)?                                                                   u:object_r:camera_data_file:s0
