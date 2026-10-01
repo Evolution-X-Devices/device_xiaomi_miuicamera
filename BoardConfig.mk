@@ -13,7 +13,7 @@ MIUICAMERA_PATH := device/xiaomi/miuicamera
 TARGET_SYSTEM_PROP += $(MIUICAMERA_PATH)/system.prop
 
 # Sepolicy
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIR += $(MIUICAMERA_PATH)/sepolicy/private
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(MIUICAMERA_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(MIUICAMERA_PATH)/sepolicy/vendor
 
 # Vmalloc
