@@ -15,8 +15,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/raphael.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/device_features/raphael.xml \
     $(LOCAL_PATH)/configs/raphaelin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/device_features/raphaelin.xml
 
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/xiaomi/miuicamera/system/priv-app/MiuiCamera/lib/arm64,$(TARGET_COPY_OUT_SYSTEM)/priv-app/MiuiCamera/lib/arm64)
+# JNI libraries MiuiCamera loads by name (see configs/public.libraries-xiaomi.txt)
+PRODUCT_PACKAGES += \
+    libcamera_algoup_jni.xiaomi \
+    libcamera_mianode_jni.xiaomi
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
